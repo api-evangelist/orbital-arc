@@ -1,7 +1,24 @@
 aid: orbital-arc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/orbital-arc.png
 name: Orbital Arc
-description: Orbital Arc is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Orbital Arc is a Houston-based deep-tech spacecraft propulsion startup founded in 2023 by
+  Jonathan Huffman, building Gas-Phase Field Effect Electric Propulsion (Gas FEEP) thrusters and the RIOT
+  Drive (Relativistic Ion Thrust Drive) for satellites and in-space transportation. Its ultra-lightweight
+  electric thrusters use solid naphthalene fuel that sublimates at room temperature instead of noble
+  gases, targeting high specific impulse for satellite constellations. Backed by Techstars and Capital
+  Factory, the company completed a sub-scale physics demonstration at Oak Ridge National Laboratory (TRL 3).
+  This is a hardware company with no public API, SDK, or developer surface as of this enrichment pass.
 url: https://raw.githubusercontent.com/api-evangelist/orbital-arc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +28,32 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Space
+- Aerospace
+- Electric Propulsion
+- Satellites
+- Deep Tech
+- Hardware
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/orbital-arc-domain-security.yml
 - type: Website
   url: https://orbitalarc.com/
+- type: Blog
+  url: https://orbitalarc.substack.com
+- type: Support
+  url: https://orbitalarc.com/contact/
